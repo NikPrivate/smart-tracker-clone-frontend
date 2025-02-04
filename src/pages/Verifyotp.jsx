@@ -17,7 +17,7 @@ const Verifyotp = () => {
       <div className="absolute inset-0 bg-black opacity-80"></div>
 
       {/* Login Form (Above the Background) */}
-      <div className="relative z-10 w-[460px] bg-opacity-90 p-8 rounded-lg shadow-lg">
+      <div className="relative z-10 w-[500px] bg-opacity-90 p-8 rounded-lg shadow-lg">
         <div className="mb-6">
           <h1 className="text-center text-4xl font-bold font-sans text-slate-200">
             SMART TRACKER
@@ -39,7 +39,7 @@ const Verifyotp = () => {
             <div className="mb-5 mt-2">
               <Otpinput />
             </div>
-            <Link to="/verify-otp">
+            <Link to="/reset-password">
               <button className="p-2 py-4 rounded shadow w-full bg-orange-500 mb-3 font-sans font-semibold hover:bg-orange-400 cursor-pointer text-slate-200 text-sm">
                 VERIFY
               </button>
