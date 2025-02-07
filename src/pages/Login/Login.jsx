@@ -65,10 +65,12 @@ const Login = () => {
                 {showPassword ? <IoMdEyeOff /> : <IoMdEye />}
               </div>
             </div>
+            <Link to="/dashboard">
+              <button className="p-2 rounded shadow w-full bg-orange-500 mb-5 font-sans font-semibold hover:bg-orange-400 cursor-pointer text-slate-200">
+                LOGIN
+              </button>
+            </Link>
 
-            <button className="p-2 rounded shadow w-full bg-orange-500 mb-5 font-sans font-semibold hover:bg-orange-400 cursor-pointer text-slate-200">
-              LOGIN
-            </button>
             <div className="flex gap-2 items-center mb-4">
               <p className="font-sans text-slate-200">Forget Password?</p>
 

@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import ForgetPass from "./pages/ForgetPass";
-import Verifyotp from "./pages/Verifyotp";
-import Resetpass from "./pages/Resetpass";
+import Login from "./pages/Login/Login";
+import ForgetPass from "./pages/Login/ForgetPass";
+import Verifyotp from "./pages/Login/Verifyotp";
+import Resetpass from "./pages/Login/Resetpass";
+import Main from "./pages/Dashboard/Main";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/forget-password" element={<ForgetPass />} />
         <Route path="/verify-otp" element={<Verifyotp />} />
         <Route path="/reset-password" element={<Resetpass />} />
+        <Route path="/dashboard" element={<Main />} />
       </Routes>
     </Router>
   );

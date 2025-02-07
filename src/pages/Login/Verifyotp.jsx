@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Otpinput from "../components/Otpinput";
+import Otpinput from "../../components/Otpinput";
 
 const Verifyotp = () => {
   return (
