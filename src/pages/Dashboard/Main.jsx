@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
+import { PieChart } from "@mui/x-charts/PieChart";
 
 const Main = () => {
   return (
@@ -15,31 +16,49 @@ const Main = () => {
         {/* Big Dashboard */}
         <div className="bg-white col-span-14 rounded-lg mr-5 p-5">
           {/* Trolleys Data */}
-          <div className="grid grid-rows-3 grid-cols-5 grid-flow-col gap-3">
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
-              <h1>Trolley Data</h1>
+          <div className="grid grid-rows-3 grid-cols-5 grid-flow-col gap-2">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto flex">
+              <div>
+                <h1>Trolleys</h1>
+              </div>
+              <div className="w-[200px] h-[200px]">
+                <PieChart
+                  series={[
+                    {
+                      data: [
+                        { id: 0, value: 5000, label: "Online" },
+                        { id: 1, value: 2000, label: "Offline" },
+                      ],
+                      innerRadius: 20,
+                      outerRadius: 60,
+                    },
+                  ]}
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto">
               <h1>Trolleys Under Maintenance</h1>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-2">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-2 h-auto">
               <h1>Most Trolleys by Geozone Tags</h1>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto">
               <h1>Total Geozones</h1>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto">
               <h1>Trolley Cleaning Status</h1>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-5 row-span-3">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-5 row-span-3">
               <h1>Map View</h1>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-10">
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
+          <div className="grid grid-cols-2 gap-4 mt-5">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto">
               <h1>Nest With Trolleys</h1>
             </div>
-            <div className="bg-white rounded-lg p-[80px] drop-shadow-lg col-span-1">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 col-span-1 h-auto">
               <h1>Unresolved Alert(S)</h1>
             </div>
           </div>
