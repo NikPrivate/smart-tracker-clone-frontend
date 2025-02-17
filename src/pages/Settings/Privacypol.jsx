@@ -10,22 +10,22 @@ const Privacypol = () => {
           Smart Tracker Privacy Policy
         </h1>
         <div className="mt-8 space-y-5">
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             1. Data collection
           </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             2. Usage of personal information
           </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             3. Third-party data sharing
           </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             4. Security measures
           </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             5. User rights
           </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
+          <p className="hover:text-orange-400 hover:underline cursor-pointer w-fit">
             6. Contact information
           </p>
         </div>
