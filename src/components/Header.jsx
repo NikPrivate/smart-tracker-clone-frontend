@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <div className="flex items-center gap-5">
         <div className="relative group w-fit">
-          <Link to="/settings">
+          <Link to="/termsncondition">
             <IoIosSettings className="text-2xl text-white cursor-pointer hover:scale-110" />
           </Link>
           <span className="mt-2 absolute bg-gray-800 text-white rounded text-xs px-2 py-1 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100">

@@ -1,35 +1,32 @@
 import React from "react";
 import Navsettings from "./Navsettings";
 
-const Termsncondition = () => {
+const Privacypol = () => {
   return (
     <div>
       <Navsettings />
       <div className="px-[220px] mt-10">
         <h1 className="font-sans text-4xl font-bold text-gray-600">
-          Smart Tracker Terms of Use
+          Smart Tracker Privacy Policy
         </h1>
         <div className="mt-8 space-y-5">
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            1. Introduction
+            1. Data collection
           </p>
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            2. The Smart Tracker Service Provided by Us
+            2. Usage of personal information
           </p>
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            3. Your Use of the Smart Tracker Service
+            3. Third-party data sharing
           </p>
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            4. Content and Intellectual Property Rights
+            4. Security measures
           </p>
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            5. Customer Support, Information, Questions and Complaints
+            5. User rights
           </p>
           <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            6. Problems and Disputes
-          </p>
-          <p className="hover:text-orange-400 hover:underline cursor-pointer">
-            7. About these Terms
+            6. Contact information
           </p>
         </div>
       </div>
@@ -37,4 +34,4 @@ const Termsncondition = () => {
   );
 };
 
-export default Termsncondition;
+export default Privacypol;
