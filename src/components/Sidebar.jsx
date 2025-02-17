@@ -13,7 +13,7 @@ import { BiSolidReport } from "react-icons/bi";
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="relative z-50">
       <div className="space-y-9 mb-10">
         <div className="flex items-center group hover:border rounded-full duration-100 p-1 w-fit hover:bg-black hover:text-white px-3">
           <RiDashboardFill className="text-2xl hover:text-white cursor-pointer text-white" />

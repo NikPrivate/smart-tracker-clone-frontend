@@ -4,6 +4,7 @@ import { IoIosSettings } from "react-icons/io";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,7 +16,14 @@ const Header = () => {
         </h1>
       </div>
       <div className="flex items-center gap-5">
-        <IoIosSettings className="text-2xl text-white cursor-pointer" />
+        <div className="relative group w-fit">
+          <Link to="/settings">
+            <IoIosSettings className="text-2xl text-white cursor-pointer hover:scale-110" />
+          </Link>
+          <span className="mt-2 absolute bg-gray-800 text-white rounded text-xs px-2 py-1 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100">
+            Settings
+          </span>
+        </div>
         <IoIosNotificationsOutline className="text-2xl text-white cursor-pointer" />
         <CgProfile className="text-2xl text-white cursor-pointer" />
         <IoIosArrowDropdownCircle className="text-2xl text-white cursor-pointer" />
